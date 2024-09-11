@@ -13,8 +13,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+    <html lang="en" data-theme="cupcake">
+      <body className={`${GeistSans.variable}`}>
+        <div className="w-full"></div>
+        <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ..."></div>
+        {children}
+        </body>
     </html>
   );
 }

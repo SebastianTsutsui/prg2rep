@@ -19,6 +19,8 @@ export default async function HomePage() {
   return (  
     <main className="">
         <div className="flex felx-wrap gap-4">
+          {posts.map((post) => (
+            <div key={post.id}>{post.name}</div>))}
           {mockImages.map((image) => (
             <div key={image.id} className="w-48">
               <img className="object-none object-center bg-yellow-300 w-24 h-24 ..." src={image.url} />

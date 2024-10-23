@@ -20,10 +20,11 @@ export default async function HomePage() {
   const images = await db.query.images.findMany();
   return (  
     <main className="">
-        <div className="flex felx-wrap gap-4">
+        <div className="flex felx-wrap gap-16">
           {images.map((image) => (
-            <div key={image.id} className="w-48">
-              <img className="object-none object-center bg-yellow-300 w-24 h-24 ..." src={image.url} />
+            <div key={image.id}>
+              <img src={image.url} />
+              <div className="font-mono text-center">{image.name}</div>
         </div>
           ))}
         </div>

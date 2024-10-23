@@ -7,7 +7,7 @@ export default {
   content: ["./src/**/*.tsx"],
 
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["light", "dark", "cupcake", "retro"],
   },
   
   plugins: [

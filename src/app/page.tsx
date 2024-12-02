@@ -26,7 +26,7 @@ export default async function HomePage() {
   return (  
     <main className="">
         <div className="flex felx-wrap gap-16">
-          {images != null && images?.map((image, index) => (
+          {images?.map((image, index) => (
             <div key={image.id}>
               <img src={image.url} />
               <div className="font-mono text-center">{image.name}</div>
